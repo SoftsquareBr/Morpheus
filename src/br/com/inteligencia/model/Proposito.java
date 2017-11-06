@@ -2,14 +2,20 @@ package br.com.inteligencia.model;
 
 /**
  * ********************************
- * @author Sergio Cordeiro da Silva
- * @projeto Mopheus
- * @data 05/11/2017
- * @email: softsquare.br@gmail.com
+ * @Author Sergio Cordeiro da Silva
+ * @Projeto Mopheus
+ * @Data 05/11/2017
+ * @Email: softsquare.br@gmail.com
  * ********************************
  */
+
+/**
+ * @Title
+ * @Briefing
+ *
+ */
 public class Proposito {
-	
+
 	String proposito;
 
 	public String getProposito() {
@@ -24,7 +30,5 @@ public class Proposito {
 	public String toString() {
 		return "Proposito [proposito=" + proposito + "]";
 	}
-	
-	
 
 }

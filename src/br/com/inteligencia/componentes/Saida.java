@@ -1,21 +1,28 @@
 package br.com.inteligencia.componentes;
+
+import javax.swing.JOptionPane;
+
 /**
  * ********************************
- * @author Sergio Cordeiro da Silva
- * @projeto Mopheus
- * @data 05/11/2017
- * @email: softsquare.br@gmail.com
+ * @Author Sergio Cordeiro da Silva
+ * @Projeto Mopheus
+ * @Data 05/11/2017
+ * @Email: softsquare.br@gmail.com
  * ********************************
  */
+
+/**
+ * @Title
+ * @Briefing
+ *
+ */
 public class Saida {
-	
-	
-	
-	public void reposta (){
-		
-		
-		
-		
+
+	public void reposta() {
+		String resposta = null;
+
+		JOptionPane.showMessageDialog(null, resposta);
+
 	}
 
 }
