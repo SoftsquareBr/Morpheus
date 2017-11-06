@@ -1,12 +1,11 @@
 package br.com.inteligencia.manipular.objetos;
 
-import java.io.BufferedWriter;
+import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileOutputStream;
+import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.OutputStreamWriter;
+import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
-import java.io.Writer;
 import java.util.logging.Logger;
 
 /**
@@ -23,24 +22,24 @@ import java.util.logging.Logger;
  * @Briefing
  *
  */
-public class TestEncode {
-	static Logger log = Logger.getLogger(TestEncode.class.getName());
+public class ArquivoEncode {
+	static Logger log = Logger.getLogger(ArquivoEncode.class.getName());
 
 	public static void main(String[] args) {
 
 		try {
-			File fileDir = new File("C:\\Cordeiro\\Morpheus\\criacao\\Arquivo.txt");
+			File fileDir = new File("c:\\temp\\test.txt");
 
-			Writer out = new BufferedWriter(new OutputStreamWriter(
-					new FileOutputStream(fileDir), "UTF8"));
+			BufferedReader in = new BufferedReader(new InputStreamReader(
+					new FileInputStream(fileDir), "UTF8"));
 
-			out.append("Website UTF-8").append("\r\n");
-			out.append("?? UTF-8").append("\r\n");
-			out.append("??????? UTF-8").append("\r\n");
+			String str;
 
-			out.flush();
-			out.close();
+			while ((str = in.readLine()) != null) {
+				System.out.println(str);
+			}
 
+			in.close();
 		} catch (UnsupportedEncodingException e) {
 			System.out.println(e.getMessage());
 		} catch (IOException e) {

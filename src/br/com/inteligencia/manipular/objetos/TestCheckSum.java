@@ -23,7 +23,7 @@ public class TestCheckSum {
 
 	public static void main(String args[]) throws Exception {
 
-		String datafile = "c:\\INSTLOG.TXT";
+		String datafile = "C:\\Cordeiro\\Morpheus\\criacao\\Arquivo.txt";
 
 		MessageDigest md = MessageDigest.getInstance("SHA1");
 		FileInputStream fis = new FileInputStream(datafile);

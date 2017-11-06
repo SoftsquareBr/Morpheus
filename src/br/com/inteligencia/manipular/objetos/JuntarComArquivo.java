@@ -22,7 +22,7 @@ import java.util.logging.Logger;
  */
 public class JuntarComArquivo {
 	static Logger log = Logger.getLogger(JuntarComArquivo.class.getName());
-	private static final String FILENAME = "E:\\test\\filename.txt";
+	private static final String FILENAME = "C:\\Cordeiro\\Morpheus\\criacao\\Arquivo.txt";
 
 	public static void main(String[] args) {
 

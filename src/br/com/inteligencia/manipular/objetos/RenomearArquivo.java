@@ -24,11 +24,11 @@ public class RenomearArquivo
 
 	public static void main(String[] args) {
 
-		File oldfile = new File("oldfile.txt");
-		File newfile = new File("newfile.txt");
+		File oldfile = new File("C:\\Cordeiro\\Morpheus\\criacao\\oldfile.txt");
+		File newfile = new File("C:\\Cordeiro\\Morpheus\\criacao\\newfile.txt");
 
 		if (oldfile.renameTo(newfile)) {
-			System.out.println("Rename succesful");
+			System.out.println("Rename succesfull");
 		} else {
 			System.out.println("Rename failed");
 		}

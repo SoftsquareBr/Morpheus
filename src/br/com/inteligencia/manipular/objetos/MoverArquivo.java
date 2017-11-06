@@ -23,7 +23,7 @@ public class MoverArquivo {
 	public static void main(String[] args) {
 		try {
 
-			File afile = new File("C:\\folderA\\Afile.txt");
+			File afile = new File("C:\\Cordeiro\\Morpheus\\criacao\\Arquivo.txt");
 
 			if (afile.renameTo(new File("C:\\folderB\\" + afile.getName()))) {
 				System.out.println("File is moved successful!");

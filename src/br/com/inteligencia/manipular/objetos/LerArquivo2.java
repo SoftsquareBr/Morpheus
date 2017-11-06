@@ -19,21 +19,14 @@ import java.util.logging.Logger;
  * @Briefing
  *
  */
-public class LeituraDeArquivo {
-	static Logger log = Logger.getLogger(LeituraDeArquivo.class.getName());
+public class LerArquivo2 {
+	static Logger log = Logger.getLogger(LerArquivo2.class.getName());
 
 	private static final String FILENAME = "C:\\Cordeiro\\Morpheus\\criacao\\Arquivo.txt";
 
 	public static void main(String[] args) {
 
-		BufferedReader br = null;
-		FileReader fr = null;
-
-		try {
-
-			// br = new BufferedReader(new FileReader(FILENAME));
-			fr = new FileReader(FILENAME);
-			br = new BufferedReader(fr);
+		try (BufferedReader br = new BufferedReader(new FileReader(FILENAME))) {
 
 			String sCurrentLine;
 
@@ -42,25 +35,7 @@ public class LeituraDeArquivo {
 			}
 
 		} catch (IOException e) {
-
 			e.printStackTrace();
-
-		} finally {
-
-			try {
-
-				if (br != null)
-					br.close();
-
-				if (fr != null)
-					fr.close();
-
-			} catch (IOException ex) {
-
-				ex.printStackTrace();
-
-			}
-
 		}
 
 	}

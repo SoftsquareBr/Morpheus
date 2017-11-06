@@ -28,7 +28,7 @@ public class LerNumeroLinha {
 
 		try {
 
-			File file = new File("c:\\ihave10lines.txt");
+			File file = new File("C:\\Cordeiro\\Morpheus\\criacao\\Arquivo.txt");
 
 			if (file.exists()) {
 
