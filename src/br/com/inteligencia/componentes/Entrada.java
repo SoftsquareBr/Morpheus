@@ -1,4 +1,4 @@
-package br.com.inteligencia.init;
+package br.com.inteligencia.componentes;
 /**
  * ********************************
  * @author Sergio Cordeiro da Silva
@@ -7,9 +7,10 @@ package br.com.inteligencia.init;
  * @email: softsquare.br@gmail.com
  * ********************************
  */
-public class Inicio {
+public class Entrada {
 	
-	public static void main (String [] args){
+	
+	public void entrada(){
 		
 	}
 

@@ -1,5 +1,13 @@
 package br.com.inteligencia.model;
 
+/**
+ * ********************************
+ * @author Sergio Cordeiro da Silva
+ * @projeto Mopheus
+ * @data 05/11/2017
+ * @email: softsquare.br@gmail.com
+ * ********************************
+ */
 public class Proposito {
 	
 	String proposito;
