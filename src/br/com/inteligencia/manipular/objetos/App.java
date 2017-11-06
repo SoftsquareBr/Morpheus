@@ -4,27 +4,41 @@ import java.io.DataInputStream;
 import java.io.FileInputStream;
 import java.util.logging.Logger;
 
-public class App{
+/**
+ * ********************************
+ * @Author Sergio Cordeiro da Silva
+ * @Projeto Mopheus
+ * @Data 05/11/2017
+ * @Email: softsquare.br@gmail.com
+ * ********************************
+ */
+
+/**
+ * @Title
+ * @Briefing
+ *
+ */
+public class App {
 	static Logger log = Logger.getLogger(App.class.getName());
-	public static void main (String args[]) {
 
-	try{
+	public static void main(String args[]) {
 
-	         DataInputStream dis =
-		    new DataInputStream (
-		    	 new FileInputStream ("c:\\logging.log"));
+		try {
 
-		 byte[] datainBytes = new byte[dis.available()];
-		 dis.readFully(datainBytes);
-		 dis.close();
+			DataInputStream dis = new DataInputStream(new FileInputStream(
+					"c:\\logging.log"));
 
-		 String content = new String(datainBytes, 0, datainBytes.length);
+			byte[] datainBytes = new byte[dis.available()];
+			dis.readFully(datainBytes);
+			dis.close();
 
-		 System.out.println(content);
+			String content = new String(datainBytes, 0, datainBytes.length);
 
-	}catch(Exception ex){
-		ex.printStackTrace();
+			System.out.println(content);
+
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+
 	}
-
-  }
 }

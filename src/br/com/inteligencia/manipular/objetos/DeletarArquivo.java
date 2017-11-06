@@ -3,26 +3,39 @@ package br.com.inteligencia.manipular.objetos;
 import java.io.File;
 import java.util.logging.Logger;
 
-public class DeletarArquivo
-{
+/**
+ * ********************************
+ * @Author Sergio Cordeiro da Silva
+ * @Projeto Mopheus
+ * @Data 05/11/2017
+ * @Email: softsquare.br@gmail.com
+ * ********************************
+ */
+
+/**
+ * @Title
+ * @Briefing
+ *
+ */
+public class DeletarArquivo {
 	static Logger log = Logger.getLogger(DeletarArquivo.class.getName());
-    public static void main(String[] args)
-    {
-    	try{
 
-    		File file = new File("c:\\logfile20100131.log");
+	public static void main(String[] args) {
+		try {
 
-    		if(file.delete()){
-    			System.out.println(file.getName() + " is deleted!");
-    		}else{
-    			System.out.println("Delete operation is failed.");
-    		}
+			File file = new File("c:\\logfile20100131.log");
 
-    	}catch(Exception e){
+			if (file.delete()) {
+				System.out.println(file.getName() + " is deleted!");
+			} else {
+				System.out.println("Delete operation is failed.");
+			}
 
-    		e.printStackTrace();
+		} catch (Exception e) {
 
-    	}
+			e.printStackTrace();
 
-    }
+		}
+
+	}
 }

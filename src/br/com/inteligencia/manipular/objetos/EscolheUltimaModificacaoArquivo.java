@@ -6,37 +6,51 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.logging.Logger;
 
-public class EscolheUltimaModificacaoArquivo
-{
-	static Logger log = Logger.getLogger(EscolheUltimaModificacaoArquivo.class.getName());
-    public static void main(String[] args)
-    {
+/**
+ * ********************************
+ * @Author Sergio Cordeiro da Silva
+ * @Projeto Mopheus
+ * @Data 05/11/2017
+ * @Email: softsquare.br@gmail.com
+ * ********************************
+ */
 
-    	try{
+/**
+ * @Title
+ * @Briefing
+ *
+ */
+public class EscolheUltimaModificacaoArquivo {
+	static Logger log = Logger.getLogger(EscolheUltimaModificacaoArquivo.class
+			.getName());
 
-    		File file = new File("C:\\Cordeiro\\logfile.log");
+	public static void main(String[] args) {
 
-    		//print the original last modified date
-    		SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
-    		System.out.println("Original Last Modified Date : "
-    				+ sdf.format(file.lastModified()));
+		try {
 
-    		//set this date
-    		String newLastModified = "01/31/1998";
+			File file = new File("C:\\Cordeiro\\logfile.log");
 
-    		//need convert the above date to milliseconds in long value
-    		Date newDate = sdf.parse(newLastModified);
-    		file.setLastModified(newDate.getTime());
+			// print the original last modified date
+			SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
+			System.out.println("Original Last Modified Date : "
+					+ sdf.format(file.lastModified()));
 
-    		//print the latest last modified date
-    		System.out.println("Lastest Last Modified Date : "
-    				+ sdf.format(file.lastModified()));
+			// set this date
+			String newLastModified = "01/31/1998";
 
-    	}catch(ParseException e){
+			// need convert the above date to milliseconds in long value
+			Date newDate = sdf.parse(newLastModified);
+			file.setLastModified(newDate.getTime());
 
-    		e.printStackTrace();
+			// print the latest last modified date
+			System.out.println("Lastest Last Modified Date : "
+					+ sdf.format(file.lastModified()));
 
-    	}
+		} catch (ParseException e) {
 
-    }
+			e.printStackTrace();
+
+		}
+
+	}
 }

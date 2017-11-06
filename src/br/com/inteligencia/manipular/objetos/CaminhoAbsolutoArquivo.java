@@ -4,28 +4,42 @@ import java.io.File;
 import java.io.IOException;
 import java.util.logging.Logger;
 
-public class CaminhoAbsolutoArquivo
-{
-	static Logger log = Logger.getLogger(CaminhoAbsolutoArquivo.class.getName());
-    public static void main(String[] args)
-    {
-    	try{
+/**
+ * ********************************
+ * @Author Sergio Cordeiro da Silva
+ * @Projeto Mopheus
+ * @Data 05/11/2017
+ * @Email: softsquare.br@gmail.com
+ * ********************************
+ */
 
-    	    File temp = File.createTempFile("i-am-a-temp-file", ".tmp" );
+/**
+ * @Title
+ * @Briefing
+ *
+ */
+public class CaminhoAbsolutoArquivo {
+	static Logger log = Logger
+			.getLogger(CaminhoAbsolutoArquivo.class.getName());
 
-    	    String absolutePath = temp.getAbsolutePath();
-    	    System.out.println("File path : " + absolutePath);
+	public static void main(String[] args) {
+		try {
 
-    	    String filePath = absolutePath.
-    	    	     substring(0,absolutePath.lastIndexOf(File.separator));
+			File temp = File.createTempFile("i-am-a-temp-file", ".tmp");
 
-    	    System.out.println("File path : " + filePath);
+			String absolutePath = temp.getAbsolutePath();
+			System.out.println("File path : " + absolutePath);
 
-    	}catch(IOException e){
+			String filePath = absolutePath.substring(0,
+					absolutePath.lastIndexOf(File.separator));
 
-    	    e.printStackTrace();
+			System.out.println("File path : " + filePath);
 
-    	}
+		} catch (IOException e) {
 
-    }
+			e.printStackTrace();
+
+		}
+
+	}
 }

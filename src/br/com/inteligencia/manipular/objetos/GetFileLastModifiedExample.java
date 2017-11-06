@@ -4,17 +4,31 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.logging.Logger;
 
-public class GetFileLastModifiedExample
-{
-	static Logger log = Logger.getLogger(GetFileLastModifiedExample.class.getName());
-    public static void main(String[] args)
-    {
-	File file = new File("c:\\logfile.log");
+/**
+ * ********************************
+ * @Author Sergio Cordeiro da Silva
+ * @Projeto Mopheus
+ * @Data 05/11/2017
+ * @Email: softsquare.br@gmail.com
+ * ********************************
+ */
 
-	System.out.println("Before Format : " + file.lastModified());
+/**
+ * @Title
+ * @Briefing
+ *
+ */
+public class GetFileLastModifiedExample {
+	static Logger log = Logger.getLogger(GetFileLastModifiedExample.class
+			.getName());
 
-	SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
+	public static void main(String[] args) {
+		File file = new File("c:\\logfile.log");
 
-	System.out.println("After Format : " + sdf.format(file.lastModified()));
-    }
+		System.out.println("Before Format : " + file.lastModified());
+
+		SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
+
+		System.out.println("After Format : " + sdf.format(file.lastModified()));
+	}
 }

@@ -6,43 +6,56 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 import java.util.logging.Logger;
 
-public class GetFileCreationDateExample
-{
-	static Logger log = Logger.getLogger(GetFileCreationDateExample.class.getName());
-    public static void main(String[] args)
-    {
+/**
+ * ********************************
+ * @Author Sergio Cordeiro da Silva
+ * @Projeto Mopheus
+ * @Data 05/11/2017
+ * @Email: softsquare.br@gmail.com
+ * ********************************
+ */
 
-    	try{
+/**
+ * @Title
+ * @Briefing
+ *
+ */
+public class GetFileCreationDateExample {
+	static Logger log = Logger.getLogger(GetFileCreationDateExample.class
+			.getName());
 
-    		Process proc =
-    		   Runtime.getRuntime().exec("cmd /c dir c:\\logfile.log /tc");
+	public static void main(String[] args) {
 
-    		BufferedReader br =
-    		   new BufferedReader(
-    		      new InputStreamReader(proc.getInputStream()));
+		try {
 
-    		String data ="";
+			Process proc = Runtime.getRuntime().exec(
+					"cmd /c dir c:\\logfile.log /tc");
 
-    		//it's quite stupid but work
-    		for(int i=0; i<6; i++){
-    			data = br.readLine();
-    		}
+			BufferedReader br = new BufferedReader(new InputStreamReader(
+					proc.getInputStream()));
 
-    		System.out.println("Extracted value : " + data);
+			String data = "";
 
-    		//split by space
-    		StringTokenizer st = new StringTokenizer(data);
-    		String date = st.nextToken();//Get date
-    		String time = st.nextToken();//Get time
+			// it's quite stupid but work
+			for (int i = 0; i < 6; i++) {
+				data = br.readLine();
+			}
 
-    		System.out.println("Creation Date  : " + date);
-    		System.out.println("Creation Time  : " + time);
+			System.out.println("Extracted value : " + data);
 
-    	}catch(IOException e){
+			// split by space
+			StringTokenizer st = new StringTokenizer(data);
+			String date = st.nextToken();// Get date
+			String time = st.nextToken();// Get time
 
-    		e.printStackTrace();
+			System.out.println("Creation Date  : " + date);
+			System.out.println("Creation Time  : " + time);
 
-    	}
+		} catch (IOException e) {
 
-    }
+			e.printStackTrace();
+
+		}
+
+	}
 }

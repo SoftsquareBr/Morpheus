@@ -3,14 +3,27 @@ package br.com.inteligencia.manipular.objetos;
 import java.io.File;
 import java.util.logging.Logger;
 
-public class FileSizeExample
-{
-	static Logger log = Logger.getLogger(FileSizeExample.class.getName());
-    public static void main(String[] args)
-    {
-		File file =new File("c:\\java_xml_logo.jpg");
+/**
+ * ********************************
+ * @Author Sergio Cordeiro da Silva
+ * @Projeto Mopheus
+ * @Data 05/11/2017
+ * @Email: softsquare.br@gmail.com
+ * ********************************
+ */
 
-		if(file.exists()){
+/**
+ * @Title
+ * @Briefing
+ *
+ */
+public class FileSizeExample {
+	static Logger log = Logger.getLogger(FileSizeExample.class.getName());
+
+	public static void main(String[] args) {
+		File file = new File("c:\\java_xml_logo.jpg");
+
+		if (file.exists()) {
 
 			double bytes = file.length();
 			double kilobytes = (bytes / 1024);
@@ -31,9 +44,9 @@ public class FileSizeExample
 			System.out.println("exabytes : " + exabytes);
 			System.out.println("zettabytes : " + zettabytes);
 			System.out.println("yottabytes : " + yottabytes);
-		}else{
-			 System.out.println("File does not exists!");
+		} else {
+			System.out.println("File does not exists!");
 		}
 
-    }
+	}
 }

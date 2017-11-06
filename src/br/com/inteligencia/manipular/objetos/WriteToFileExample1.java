@@ -1,11 +1,24 @@
 package br.com.inteligencia.manipular.objetos;
 
-
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.logging.Logger;
 
+/**
+ * ********************************
+ * @Author Sergio Cordeiro da Silva
+ * @Projeto Mopheus
+ * @Data 05/11/2017
+ * @Email: softsquare.br@gmail.com
+ * ********************************
+ */
+
+/**
+ * @Title
+ * @Briefing
+ *
+ */
 public class WriteToFileExample1 {
 	static Logger log = Logger.getLogger(WriteToFileExample1.class.getName());
 

@@ -1,7 +1,6 @@
 package br.com.inteligencia.manipular.objetos;
 
-
-	import java.io.BufferedWriter;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -10,35 +9,44 @@ import java.io.UnsupportedEncodingException;
 import java.io.Writer;
 import java.util.logging.Logger;
 
-	public class TestEncode {
-		static Logger log = Logger.getLogger(TestEncode.class.getName());
-		public static void main(String[] args){
+/**
+ * ********************************
+ * @Author Sergio Cordeiro da Silva
+ * @Projeto Mopheus
+ * @Data 05/11/2017
+ * @Email: softsquare.br@gmail.com
+ * ********************************
+ */
 
-		  try {
+/**
+ * @Title
+ * @Briefing
+ *
+ */
+public class TestEncode {
+	static Logger log = Logger.getLogger(TestEncode.class.getName());
+
+	public static void main(String[] args) {
+
+		try {
 			File fileDir = new File("c:\\temp\\test.txt");
-				
+
 			Writer out = new BufferedWriter(new OutputStreamWriter(
-				new FileOutputStream(fileDir), "UTF8"));
+					new FileOutputStream(fileDir), "UTF8"));
 
 			out.append("Website UTF-8").append("\r\n");
 			out.append("?? UTF-8").append("\r\n");
 			out.append("??????? UTF-8").append("\r\n");
-			
+
 			out.flush();
 			out.close();
-		        
-		    } 
-		   catch (UnsupportedEncodingException e) 
-		   {
+
+		} catch (UnsupportedEncodingException e) {
 			System.out.println(e.getMessage());
-		   } 
-		   catch (IOException e) 
-		   {
+		} catch (IOException e) {
 			System.out.println(e.getMessage());
-		    }
-		   catch (Exception e)
-		   {
+		} catch (Exception e) {
 			System.out.println(e.getMessage());
-		   } 
-		}	
+		}
 	}
+}

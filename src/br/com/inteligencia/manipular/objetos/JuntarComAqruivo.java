@@ -6,6 +6,20 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.logging.Logger;
 
+/**
+ * ********************************
+ * @Author Sergio Cordeiro da Silva
+ * @Projeto Mopheus
+ * @Data 05/11/2017
+ * @Email: softsquare.br@gmail.com
+ * ********************************
+ */
+
+/**
+ * @Title
+ * @Briefing
+ *
+ */
 public class JuntarComAqruivo {
 	static Logger log = Logger.getLogger(JuntarComAqruivo.class.getName());
 	private static final String FILENAME = "E:\\test\\filename.txt";

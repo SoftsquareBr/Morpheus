@@ -5,6 +5,20 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.logging.Logger;
 
+/**
+ * ********************************
+ * @Author Sergio Cordeiro da Silva
+ * @Projeto Mopheus
+ * @Data 05/11/2017
+ * @Email: softsquare.br@gmail.com
+ * ********************************
+ */
+
+/**
+ * @Title
+ * @Briefing
+ *
+ */
 public class ReadFileExample2 {
 	static Logger log = Logger.getLogger(ReadFileExample2.class.getName());
 

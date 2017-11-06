@@ -4,37 +4,50 @@ import java.io.File;
 import java.io.IOException;
 import java.util.logging.Logger;
 
-public class FilePermissionExample
-{
+/**
+ * ********************************
+ * @Author Sergio Cordeiro da Silva
+ * @Projeto Mopheus
+ * @Data 05/11/2017
+ * @Email: softsquare.br@gmail.com
+ * ********************************
+ */
+
+/**
+ * @Title
+ * @Briefing
+ *
+ */
+public class FilePermissionExample {
 	static Logger log = Logger.getLogger(FilePermissionExample.class.getName());
-    public static void main( String[] args )
-    {
-    	try {
 
-	      File file = new File("/mkyong/shellscript.sh");
+	public static void main(String[] args) {
+		try {
 
-	      if(file.exists()){
-	    	  System.out.println("Is Execute allow : " + file.canExecute());
-		  System.out.println("Is Write allow : " + file.canWrite());
-		  System.out.println("Is Read allow : " + file.canRead());
-	      }
+			File file = new File("/mkyong/shellscript.sh");
 
-	      file.setExecutable(false);
-	      file.setReadable(false);
-	      file.setWritable(false);
+			if (file.exists()) {
+				System.out.println("Is Execute allow : " + file.canExecute());
+				System.out.println("Is Write allow : " + file.canWrite());
+				System.out.println("Is Read allow : " + file.canRead());
+			}
 
-	      System.out.println("Is Execute allow : " + file.canExecute());
-	      System.out.println("Is Write allow : " + file.canWrite());
-	      System.out.println("Is Read allow : " + file.canRead());
+			file.setExecutable(false);
+			file.setReadable(false);
+			file.setWritable(false);
 
-	      if (file.createNewFile()){
-	        System.out.println("File is created!");
-	      }else{
-	        System.out.println("File already exists.");
-	      }
+			System.out.println("Is Execute allow : " + file.canExecute());
+			System.out.println("Is Write allow : " + file.canWrite());
+			System.out.println("Is Read allow : " + file.canRead());
 
-    	} catch (IOException e) {
-	      e.printStackTrace();
-	    }
-    }
+			if (file.createNewFile()) {
+				System.out.println("File is created!");
+			} else {
+				System.out.println("File already exists.");
+			}
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 }

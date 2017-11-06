@@ -3,23 +3,36 @@ package br.com.inteligencia.manipular.objetos;
 import java.io.File;
 import java.util.logging.Logger;
 
-public class MoverArquivo
-{
+/**
+ * ********************************
+ * @Author Sergio Cordeiro da Silva
+ * @Projeto Mopheus
+ * @Data 05/11/2017
+ * @Email: softsquare.br@gmail.com
+ * ********************************
+ */
+
+/**
+ * @Title
+ * @Briefing
+ *
+ */
+public class MoverArquivo {
 	static Logger log = Logger.getLogger(MoverArquivo.class.getName());
-    public static void main(String[] args)
-    {
-    	try{
 
-    	   File afile =new File("C:\\folderA\\Afile.txt");
+	public static void main(String[] args) {
+		try {
 
-    	   if(afile.renameTo(new File("C:\\folderB\\" + afile.getName()))){
-    		System.out.println("File is moved successful!");
-    	   }else{
-    		System.out.println("File is failed to move!");
-    	   }
+			File afile = new File("C:\\folderA\\Afile.txt");
 
-    	}catch(Exception e){
-    		e.printStackTrace();
-    	}
-    }
+			if (afile.renameTo(new File("C:\\folderB\\" + afile.getName()))) {
+				System.out.println("File is moved successful!");
+			} else {
+				System.out.println("File is failed to move!");
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 }

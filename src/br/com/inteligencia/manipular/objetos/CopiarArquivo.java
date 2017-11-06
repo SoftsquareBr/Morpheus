@@ -8,40 +8,53 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.logging.Logger;
 
-public class CopiarArquivo
-{
+/**
+ * ********************************
+ * @Author Sergio Cordeiro da Silva
+ * @Projeto Mopheus
+ * @Data 05/11/2017
+ * @Email: softsquare.br@gmail.com
+ * ********************************
+ */
+
+/**
+ * @Title
+ * @Briefing
+ *
+ */
+public class CopiarArquivo {
 	static Logger log = Logger.getLogger(CopiarArquivo.class.getName());
-    public static void main(String[] args)
-    {
 
-    	InputStream inStream = null;
-	OutputStream outStream = null;
+	public static void main(String[] args) {
 
-    	try{
+		InputStream inStream = null;
+		OutputStream outStream = null;
 
-    	    File afile =new File("Afile.txt");
-    	    File bfile =new File("Bfile.txt");
+		try {
 
-    	    inStream = new FileInputStream(afile);
-    	    outStream = new FileOutputStream(bfile);
+			File afile = new File("Afile.txt");
+			File bfile = new File("Bfile.txt");
 
-    	    byte[] buffer = new byte[1024];
+			inStream = new FileInputStream(afile);
+			outStream = new FileOutputStream(bfile);
 
-    	    int length;
-    	    //copy the file content in bytes
-    	    while ((length = inStream.read(buffer)) > 0){
+			byte[] buffer = new byte[1024];
 
-    	    	outStream.write(buffer, 0, length);
+			int length;
+			// copy the file content in bytes
+			while ((length = inStream.read(buffer)) > 0) {
 
-    	    }
+				outStream.write(buffer, 0, length);
 
-    	    inStream.close();
-    	    outStream.close();
+			}
 
-    	    System.out.println("File is copied successful!");
+			inStream.close();
+			outStream.close();
 
-    	}catch(IOException e){
-    		e.printStackTrace();
-    	}
-    }
+			System.out.println("File is copied successful!");
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 }

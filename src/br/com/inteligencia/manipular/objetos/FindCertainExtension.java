@@ -4,6 +4,20 @@ import java.io.File;
 import java.io.FilenameFilter;
 import java.util.logging.Logger;
 
+/**
+ * ********************************
+ * @Author Sergio Cordeiro da Silva
+ * @Projeto Mopheus
+ * @Data 05/11/2017
+ * @Email: softsquare.br@gmail.com
+ * ********************************
+ */
+
+/**
+ * @Title
+ * @Briefing
+ *
+ */
 public class FindCertainExtension {
 	static Logger log = Logger.getLogger(FindCertainExtension.class.getName());
 
@@ -20,7 +34,7 @@ public class FindCertainExtension {
 
 		File dir = new File(folder);
 
-		if(dir.isDirectory()==false){
+		if (dir.isDirectory() == false) {
 			System.out.println("Directory does not exists : " + FILE_DIR);
 			return;
 		}

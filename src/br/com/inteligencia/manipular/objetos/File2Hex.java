@@ -7,8 +7,23 @@ import java.io.InputStream;
 import java.io.PrintStream;
 import java.util.logging.Logger;
 
+/**
+ * ********************************
+ * @Author Sergio Cordeiro da Silva
+ * @Projeto Mopheus
+ * @Data 05/11/2017
+ * @Email: softsquare.br@gmail.com
+ * ********************************
+ */
+
+/**
+ * @Title
+ * @Briefing
+ *
+ */
 public class File2Hex {
 	static Logger log = Logger.getLogger(File2Hex.class.getName());
+
 	public static void convertToHex(PrintStream out, File file)
 			throws IOException {
 		InputStream is = new FileInputStream(file);

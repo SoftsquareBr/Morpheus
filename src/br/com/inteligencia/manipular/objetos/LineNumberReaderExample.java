@@ -6,39 +6,52 @@ import java.io.IOException;
 import java.io.LineNumberReader;
 import java.util.logging.Logger;
 
-public class LineNumberReaderExample
-{
-	static Logger log = Logger.getLogger(LineNumberReaderExample.class.getName());
-    public static void main(String[] args)
-    {
+/**
+ * ********************************
+ * @Author Sergio Cordeiro da Silva
+ * @Projeto Mopheus
+ * @Data 05/11/2017
+ * @Email: softsquare.br@gmail.com
+ * ********************************
+ */
 
-    	try{
+/**
+ * @Title
+ * @Briefing
+ *
+ */
+public class LineNumberReaderExample {
+	static Logger log = Logger.getLogger(LineNumberReaderExample.class
+			.getName());
 
-    		File file =new File("c:\\ihave10lines.txt");
+	public static void main(String[] args) {
 
-    		if(file.exists()){
+		try {
 
-    		    FileReader fr = new FileReader(file);
-    		    LineNumberReader lnr = new LineNumberReader(fr);
+			File file = new File("c:\\ihave10lines.txt");
 
-    		    int linenumber = 0;
+			if (file.exists()) {
 
-    	            while (lnr.readLine() != null){
-    	        	linenumber++;
-    	            }
+				FileReader fr = new FileReader(file);
+				LineNumberReader lnr = new LineNumberReader(fr);
 
-    	            System.out.println("Total number of lines : " + linenumber);
+				int linenumber = 0;
 
-    	            lnr.close();
+				while (lnr.readLine() != null) {
+					linenumber++;
+				}
 
+				System.out.println("Total number of lines : " + linenumber);
 
-    		}else{
-    			 System.out.println("File does not exists!");
-    		}
+				lnr.close();
 
-    	}catch(IOException e){
-    		e.printStackTrace();
-    	}
+			} else {
+				System.out.println("File does not exists!");
+			}
 
-    }
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+	}
 }

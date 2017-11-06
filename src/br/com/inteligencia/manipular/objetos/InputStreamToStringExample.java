@@ -7,8 +7,23 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.logging.Logger;
 
+/**
+ * ********************************
+ * @Author Sergio Cordeiro da Silva
+ * @Projeto Mopheus
+ * @Data 05/11/2017
+ * @Email: softsquare.br@gmail.com
+ * ********************************
+ */
+
+/**
+ * @Title
+ * @Briefing
+ *
+ */
 public class InputStreamToStringExample {
-	static Logger log = Logger.getLogger(InputStreamToStringExample.class.getName());
+	static Logger log = Logger.getLogger(InputStreamToStringExample.class
+			.getName());
 
 	public static void main(String[] args) throws IOException {
 

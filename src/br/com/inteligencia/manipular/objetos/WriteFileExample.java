@@ -5,8 +5,23 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.logging.Logger;
 
+/**
+ * ********************************
+ * @Author Sergio Cordeiro da Silva
+ * @Projeto Mopheus
+ * @Data 05/11/2017
+ * @Email: softsquare.br@gmail.com
+ * ********************************
+ */
+
+/**
+ * @Title
+ * @Briefing
+ *
+ */
 public class WriteFileExample {
 	static Logger log = Logger.getLogger(WriteFileExample.class.getName());
+
 	public static void main(String[] args) {
 
 		File file = new File("c:/newfile.txt");
