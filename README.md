@@ -18,6 +18,21 @@ Criar um codigo com a possiblidade de calibrar a eficiencia em resposta.
 # Vantagens
 A possibilidade de ultilizar o processamento de resposta eficiencia de repossta da maquina.
 
+## Description
+
+
+## Features
+
+
+## Notes
+
+
+## Changelog
+
+
+## Credits
+Sergio Cordeiro da Silva
+@softsquare
 
 /**
  * ********************************
@@ -27,3 +42,9 @@ A possibilidade de ultilizar o processamento de resposta eficiencia de repossta 
  * @email: softsquare.br@gmail.com
  * ********************************
  */
+ 
+ 
+
+
+
+

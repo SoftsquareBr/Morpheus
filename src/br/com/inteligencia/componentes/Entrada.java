@@ -20,6 +20,7 @@ public class Entrada {
 
 	public void entrada() {
 
+		@SuppressWarnings("unused")
 		String entrada;
 
 		entrada = JOptionPane.showInputDialog("EM QUE POSSO LHE SERVIR");
