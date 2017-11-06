@@ -1,7 +1,7 @@
 package br.com.inteligencia.manipular.objetos;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.IOException;
 import java.util.logging.Logger;
 
@@ -19,25 +19,27 @@ import java.util.logging.Logger;
  * @Briefing
  *
  */
-public class WriteToFileExample1 {
-	static Logger log = Logger.getLogger(WriteToFileExample1.class.getName());
+public class LeituraDeArquivo {
+	static Logger log = Logger.getLogger(LeituraDeArquivo.class.getName());
 
 	private static final String FILENAME = "E:\\test\\filename.txt";
 
 	public static void main(String[] args) {
 
-		BufferedWriter bw = null;
-		FileWriter fw = null;
+		BufferedReader br = null;
+		FileReader fr = null;
 
 		try {
 
-			String content = "This is the content to write into file\n";
+			// br = new BufferedReader(new FileReader(FILENAME));
+			fr = new FileReader(FILENAME);
+			br = new BufferedReader(fr);
 
-			fw = new FileWriter(FILENAME);
-			bw = new BufferedWriter(fw);
-			bw.write(content);
+			String sCurrentLine;
 
-			System.out.println("Done");
+			while ((sCurrentLine = br.readLine()) != null) {
+				System.out.println(sCurrentLine);
+			}
 
 		} catch (IOException e) {
 
@@ -47,11 +49,11 @@ public class WriteToFileExample1 {
 
 			try {
 
-				if (bw != null)
-					bw.close();
+				if (br != null)
+					br.close();
 
-				if (fw != null)
-					fw.close();
+				if (fr != null)
+					fr.close();
 
 			} catch (IOException ex) {
 

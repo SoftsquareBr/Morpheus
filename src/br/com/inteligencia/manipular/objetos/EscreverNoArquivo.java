@@ -1,7 +1,6 @@
 package br.com.inteligencia.manipular.objetos;
 
 import java.io.BufferedWriter;
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.logging.Logger;
@@ -20,8 +19,9 @@ import java.util.logging.Logger;
  * @Briefing
  *
  */
-public class JuntarComAqruivo {
-	static Logger log = Logger.getLogger(JuntarComAqruivo.class.getName());
+public class EscreverNoArquivo {
+	static Logger log = Logger.getLogger(EscreverNoArquivo.class.getName());
+
 	private static final String FILENAME = "E:\\test\\filename.txt";
 
 	public static void main(String[] args) {
@@ -31,20 +31,11 @@ public class JuntarComAqruivo {
 
 		try {
 
-			String data = " This is new content";
+			String content = "This is the content to write into file\n";
 
-			File file = new File(FILENAME);
-
-			// if file doesnt exists, then create it
-			if (!file.exists()) {
-				file.createNewFile();
-			}
-
-			// true = append file
-			fw = new FileWriter(file.getAbsoluteFile(), true);
+			fw = new FileWriter(FILENAME);
 			bw = new BufferedWriter(fw);
-
-			bw.write(data);
+			bw.write(content);
 
 			System.out.println("Done");
 
@@ -67,6 +58,7 @@ public class JuntarComAqruivo {
 				ex.printStackTrace();
 
 			}
+
 		}
 
 	}

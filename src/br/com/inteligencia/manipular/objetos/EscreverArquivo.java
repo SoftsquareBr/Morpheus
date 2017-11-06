@@ -19,8 +19,8 @@ import java.util.logging.Logger;
  * @Briefing
  *
  */
-public class WriteFileExample {
-	static Logger log = Logger.getLogger(WriteFileExample.class.getName());
+public class EscreverArquivo {
+	static Logger log = Logger.getLogger(EscreverArquivo.class.getName());
 
 	public static void main(String[] args) {
 

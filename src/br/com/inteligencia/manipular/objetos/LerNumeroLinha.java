@@ -20,8 +20,8 @@ import java.util.logging.Logger;
  * @Briefing
  *
  */
-public class LineNumberReaderExample {
-	static Logger log = Logger.getLogger(LineNumberReaderExample.class
+public class LerNumeroLinha {
+	static Logger log = Logger.getLogger(LerNumeroLinha.class
 			.getName());
 
 	public static void main(String[] args) {

@@ -21,8 +21,8 @@ import java.util.logging.Logger;
  * @Briefing
  *
  */
-public class InputStreamToStringExample {
-	static Logger log = Logger.getLogger(InputStreamToStringExample.class
+public class TextoSaidaArquivo {
+	static Logger log = Logger.getLogger(TextoSaidaArquivo.class
 			.getName());
 
 	public static void main(String[] args) throws IOException {

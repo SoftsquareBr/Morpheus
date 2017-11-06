@@ -1,4 +1,4 @@
-package br.com.Iinteligencia.acoes;
+package br.com.inteligencia.acoes;
 
 import java.util.logging.Logger;
 
@@ -16,10 +16,12 @@ import java.util.logging.Logger;
  * @Briefing
  *
  */
-public class Logica {
-	static Logger log = Logger.getLogger(Logica.class.getName());
+public class Lembrar {
+	static Logger log = Logger.getLogger(Lembrar.class.getName());
 
-	// log.debug("Hello this is a debug message");
-	// log.info("Hello this is an info message");
+	public void ativarLembranca() {
+		// log.debug("Hello this is a debug message");
+		// log.info("Hello this is an info message");
+	}
 
 }

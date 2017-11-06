@@ -1,4 +1,4 @@
-package br.com.Iinteligencia.acoes;
+package br.com.inteligencia.acoes;
 
 import java.util.logging.Logger;
 

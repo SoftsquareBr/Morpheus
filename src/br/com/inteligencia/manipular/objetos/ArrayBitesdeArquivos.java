@@ -23,8 +23,8 @@ import java.util.logging.Logger;
  * @Briefing
  *
  */
-public class ArrayOfBytesToFile {
-	static Logger log = Logger.getLogger(ArrayOfBytesToFile.class.getName());
+public class ArrayBitesdeArquivos {
+	static Logger log = Logger.getLogger(ArrayBitesdeArquivos.class.getName());
 	private static final String UPLOAD_FOLDER = "C:\\temp\\";
 
 	public static void main(String[] args) {
