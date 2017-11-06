@@ -1,1 +1,1 @@
-introcucao a pacotes da EA
+Arquivos de carga inicial da EA
