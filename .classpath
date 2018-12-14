@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="resources"/>
 	<classpathentry kind="src" path="lib"/>
-	<classpathentry kind="src" path="carga"/>
-	<classpathentry kind="src" path="sql"/>
-	<classpathentry kind="src" path="log"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="lib_test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="C:/Projetos/morpheus/lib"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/freetts-1.2.2.jar"/>
+	<classpathentry kind="lib" path="lib/jsr113.jar"/>
+	<classpathentry kind="lib" path="lib/weka-3.7.0.jar"/>
+	<classpathentry kind="lib" path="lib/opencv-2.4.13-0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
