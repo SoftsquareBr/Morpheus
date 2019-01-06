@@ -8,7 +8,7 @@ podemos ter mais beneficio em focar na eficiencia ao inves de inteligencia.
 Inteligencia Artificial e algo complicado, pois as pessoas confundem ou ate
 mesmo acabam esquecendo dos beneficios de inteligencia artificial pensando
 que isso serve apenas para simular um super humano, devemos lembrar que a
-unica vantagen que as maquinas tem sobre os humanos seia mesmo sua maior
+unica vantagen que as maquinas tem sobre os humanos seria mesmo sua maior
 capacidade de resposta e calculos e nao a simulacao do comportamento humano
 
 
